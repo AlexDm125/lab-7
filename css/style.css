@@ -1,0 +1,72 @@
+h1{
+    font-weight: normal;
+    text-align: center;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    border-bottom: 1px solid #a2a9b1;
+
+}
+h2{
+    font-weight: normal;
+    unicode-bidi: isolate;
+    border-bottom: 1px solid #a2a9b1;
+}
+h3{
+    font-family: sanserif;
+}
+#test{
+    text-align: justify;
+    text-indent: 24px;
+    line-height: 32px;
+    word-spacing: 5px;
+}
+p{
+    text-align: justify;
+    word-spacing: 5px;
+    line-height: 1.6;
+}
+a{
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: underline;
+}
+a:active{
+    color: orange;
+}
+
+
+
+
+
+
+.ul1 {
+    list-style-type: none;
+}
+
+.ul1 > li {
+    counter-increment: section;
+    list-style-type: none;
+}
+
+.ul1 > li:before {
+    content: counter(section) ". ";
+}
+
+.ul1 ul > li {
+    counter-increment: subsection;
+    list-style-type: none;
+}
+
+.ul1 ul > li:before {
+    content: counter(section) "." counter(subsection) " ";
+}
+
+.ul1 ul ul > li {
+    counter-increment: subsubsection;
+    list-style-type: none;
+}
+
+.ul1 ul ul > li:before {
+    content: counter(section) "." counter(subsection) "." counter(subsubsection) " ";
+} 
